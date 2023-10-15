@@ -38,7 +38,7 @@ class SGNS:
             for n, sent in enumerate(sentences):
                 # logging.info('train on %s th sentence, %s remaining', n+1, len(sentences) - n - 1)
                 for index, target in enumerate(sent):
-                    pos_words = sent[max(0, index-self.window_size):min(len(sent)-1, index+self.window_size)]
+                    pos_words = sent[max(0, index-self.window_size):min(len(sent)-1, index+self.window_size+1)]
                     while target in pos_words:
                         pos_words.remove(target)  
                     for pos_word in pos_words:
