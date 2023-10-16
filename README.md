@@ -1,4 +1,4 @@
-# SKNS
+# SGNS
 A rough attempt at SGNS
 
 语料库来自于BNC：http://www.natcorp.ox.ac.uk/
